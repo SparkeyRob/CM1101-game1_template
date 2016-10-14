@@ -170,7 +170,7 @@ def menu(exits):
     # Repeat until the player enter a valid choice
     while True:
         print_menu(exits)
-        user_input=str(input("Where would you like to go? "))
+        user_input=str(input(": "))
         user_input=normalise_input(user_input)
         if is_valid_exit(exits, user_input):
             return user_input
